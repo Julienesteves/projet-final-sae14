@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333; 
+    display: flex;
+}
+
+
+.bouton {
+    width: 150px;
+    background-color: #2f2f2f;
+    color: white;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 50px;
+}
+
+.bouton ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.bouton ul li {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.bouton ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 12px 0;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.blockchain h1 {
+    font-family: 'Roboto Slab', serif; 
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.blockchain p {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 1.5rem;
+    color: #555;
+}
+
+.blockchain-texte {
+    padding: 40px 20px;
+    background-color: #fff;
+    margin-top: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.blockchain-texte h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 2rem;
+    color: #ff6f00;
+    margin-bottom: 15px;
+}
+
+.blockchain-texte h3 {
+    font-family: 'Roboto Slab', serif; 
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 20px;
+}
+
+.blockchain-texte p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.blockchain-texte ul {
+    list-style: disc inside;
+    margin: 10px 0 20px 0;
+    padding-left: 20px;
+}
+
+.blockchain-texte li {
+    margin-bottom: 10px;
+}
+
+.moi {
+    margin-left: 250px;
+    padding: 20px;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .logo img {
+    max-width: 150px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ff6f00; 
+}
+
+.actualite {
+    margin-top: 30px;
+}
+
+.actualite h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #333;
+}
+
+.lien {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lien{
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.lien h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.lien p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.read-more {
+    color: #ff6f00;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+
+.àpropos {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 30px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.àpropos p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .main-content {
+        margin-left: 200px;
+    }
+
+    .actualite h1 {
+        font-size: 2rem;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+}
