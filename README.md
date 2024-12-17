@@ -18,4 +18,6 @@ Ce projet utilise les technologies suivantes :
 - **Google Fonts** : Utilisation des polices **Poppins** et **Roboto Slab** pour une typographie soignée.
 - **GitHub Pages** : Pour l'hébergement gratuit du projet.
 
+(J'ai eu de nombreux bug pour commit pour ça qu'il n'y en à pas beaucoup )
+
 
