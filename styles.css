@@ -110,7 +110,6 @@ header nav ul li a:hover {
 .actualites h2 {
     font-size: 2.5rem;
     margin-bottom: 30px;
-    text-align: center;
     color: #333;
 }
 
@@ -119,13 +118,6 @@ header nav ul li a:hover {
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.lien:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .lien h2 {
@@ -148,7 +140,6 @@ header nav ul li a:hover {
 }
 
 .blockchain h1 {
-    font-family: 'Roboto Slab', serif; 
     font-size: 3rem;
     margin-bottom: 10px;
     color: #333;
@@ -164,7 +155,7 @@ header nav ul li a:hover {
     padding: 40px 20px;
     background-color: #fff;
     margin-top: 50px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ 
 
 }
 
@@ -205,10 +196,8 @@ header nav ul li a:hover {
 .àpropos {
     background-color: #fff;
     border: 1px solid #ddd;
-    border-radius: 8px;
     padding: 20px;
     margin: 30px 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
@@ -218,43 +207,3 @@ header nav ul li a:hover {
     line-height: 1.8;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    body {
-        padding-left: 0;  /* Supprime l'espace pour la sidebar sur petits écrans */
-    }
-
-    .bouton {
-        width: 200px;  /* Agrandit la sidebar pour petits écrans */
-    }
-
-    .moi {
-        margin-left: 0;  /* Supprime l'espace pour la sidebar */
-        width: 100%;
-    }
-
-    header nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    header nav ul li {
-        margin: 10px 0;
-    }
-
-    .actualites h2 {
-        font-size: 2rem;
-    }
-
-    .intro h2 {
-        font-size: 2rem;
-    }
-
-    .lien h2 {
-        font-size: 1.6rem;
-    }
-
-    .lien p {
-        font-size: 1rem;
-    }
-}
