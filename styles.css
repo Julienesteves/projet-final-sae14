@@ -12,7 +12,6 @@ body {
     display: flex;
 }
 
-
 .bouton {
     width: 150px;
     background-color: #2f2f2f;
@@ -25,7 +24,6 @@ body {
 }
 
 .bouton ul {
-    list-style: none;
     padding-left: 0;
 }
 
@@ -40,7 +38,113 @@ body {
     font-size: 18px;
     padding: 12px 0;
     display: block;
-    transition: background-color 0.3s ease;
+}
+
+.moi {
+    margin-left: 200px;  
+    padding: 20px;
+    width: calc(100% - 200px); 
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+}
+
+header .logo img {
+    max-width: 150px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+header nav ul li a:hover {
+    color: #ff6f00; 
+}
+
+.intro {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.intro h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.act {
+    background-color: #ff6f00;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.act:hover {
+    background-color: #e65c00;
+}
+
+
+
+.actualites h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #333;
+}
+
+.lien {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lien:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.lien h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.lien p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.read-more {
+    color: #ff6f00;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
 }
 
 .blockchain h1 {
@@ -94,95 +198,9 @@ body {
 .blockchain-texte li {
     margin-bottom: 10px;
 }
-
-.moi {
-    margin-left: 250px;
-    padding: 20px;
-    width: 100%;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-header .logo img {
-    max-width: 150px;
-}
-
-header nav ul {
-    list-style: none;
-    display: flex;
-}
-
-header nav ul li {
-    margin-left: 20px;
-}
-
-header nav ul li a {
-    color: #333;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-
-header nav ul li a:hover {
-    color: #ff6f00; 
-}
-
-.actualite {
-    margin-top: 30px;
-}
-
-.actualite h1 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    text-align: center;
-    color: #333;
-}
-
-.lien {
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.lien{
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.lien h2 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-.lien p {
-    font-size: 1.1rem;
-    color: #555;
-    margin-bottom: 15px;
-}
-
-.read-more {
-    color: #ff6f00;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1rem;
-}
-
 .read-more:hover {
     text-decoration: underline;
 }
-
 
 .àpropos {
     background-color: #fff;
@@ -200,17 +218,19 @@ header nav ul li a:hover {
     line-height: 1.8;
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
-    .sidebar {
-        width: 200px;
+    body {
+        padding-left: 0;  /* Supprime l'espace pour la sidebar sur petits écrans */
     }
 
-    .main-content {
-        margin-left: 200px;
+    .bouton {
+        width: 200px;  /* Agrandit la sidebar pour petits écrans */
     }
 
-    .actualite h1 {
-        font-size: 2rem;
+    .moi {
+        margin-left: 0;  /* Supprime l'espace pour la sidebar */
+        width: 100%;
     }
 
     header nav ul {
@@ -220,5 +240,21 @@ header nav ul li a:hover {
 
     header nav ul li {
         margin: 10px 0;
+    }
+
+    .actualites h2 {
+        font-size: 2rem;
+    }
+
+    .intro h2 {
+        font-size: 2rem;
+    }
+
+    .lien h2 {
+        font-size: 1.6rem;
+    }
+
+    .lien p {
+        font-size: 1rem;
     }
 }
